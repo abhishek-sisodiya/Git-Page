@@ -1,140 +1,68 @@
-<h1 align="center">
-  <br>
-  <a><img src="https://github.com/abhishek-sisodiya/theweatherman/blob/master/Frontend/docs/images/angular.png" alt="Angular"></a>
-  <br>
-The WeatherMan(Angular 6)
-  <br>
-</h1>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Table of Contents ##
-1. [Angular 6](#Angular-6)
-2. [Application](#Application)
-3. [Live Application url](#Live-Application-url)
-4. [Prerequites to Run the Application](#Prerequites-to-Run-the-Application)
-5. [Application Structure](#Application-Structure)
-6. [UI Design](#UI-Design)
-7. [Run Insider Docker](#Running-the-server-in-Docker-Container)
-8. [Angular 6 References](#Angular-6-References)
-9. [Contributor](#Contributor)
-10. [License](#License)
+## Available Scripts
 
+In the project directory, you can run:
 
-## Angular 6 ##
-Angular 6 is a right choice to build web Single Page Applications. It helps to publish web component which is used in an HTML page. Angular 6 was released on May 4, 2018. It includes the Component Development Kit (CDK), Angular CLI (Command Line Interface), and Angular Material Package Update. JavaScript was initially used by designers to develop the image, but now it is used for front-end development.
-It has several features and specifications, that will definitely benefit the app development industry at large. Faster, Smaller and Easier is the main motto of Angular 6 functions. This update is helpful for mobile and web app development.Angular 6 has given more emphasis on the toolchain instead of the underlying framework, which indeed makes it simpler and faster to use the Angular. 
+### `npm start`
 
-**Component Development Kit (CDK)**
-CDK was released in Dec 2017. With this, a user can build own library for UI components. It also supports for Responsive Web Design.
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-**Angular Command Line Interface (CLI)**
-CLI helps to update code and dependencies, it is also equipped for ng-update command. ng-add helps to append the application features in CLI. Each and every command helps developers to prefer ng-package for different libraries using Bazel tool.
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-**Angular Material Design Library**
-This design library helps to visualize tree structures in hierarchical order.
+### `npm test`
 
-**Bazel Compiler**
-It is almost used in all software such as optimized dependency, distributed caching, parallel execution, mobile application is helpful to build a web in a short duration. Bazel Compiler includes 300+ apps which are written in Angular.
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**Closure Compiler**
-Bundling optimizer which allows you to build JavaScript modules. At the same time, it helps to generate minimum bundles. Upcoming releases of Angular framework use toolchain for app development.
+### `npm run build`
 
-## Application ##
-The idea of the application is to design a WeatherMan Analysis which shows approximate weather forecast of 5 days ,on the basis of the analysis done on the data from four well known and authorized weather service providers, for the place which user selects.It also compares and check the data of last year on that particular date and thus makes it analysis more accurate.The aim of the application is to give the most accurate weather information out of all the service providers.
-This application is unique in every aspect whether the idea of its creation or the technologies used to build it. We have used Angular 6 as frontend technology along with two backend technologies-
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. Spring Boot 2.0 with MySQL
-2. Dotnet Core 2.2 with cosmosDB
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-We have used two backend technologies so that user can choose the one in which he/she is more comfortable working with. The aim of the application is to give the most accurate weather information out of all the service providers.
-This application is unique in every aspect whether the idea of its creation or the technologies used to build it. It is very well justified in every phase. The technologies used are the ones which are on the boom in the techno-world right now and thus adds starts to this application.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Live Application url ##
+### `npm run eject`
 
-http://52.165.145.32
-This is the link where the app is deployed.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Prerequites to Run the Application ##
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-** Install NodeJS **
-Refer https://nodejs.org/en/ to install NodeJS
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-** Install Angular CLI **
-npm install -g @angular/cli
-Refer https://cli.angular.io/ to know more about angular CLI
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-** Clone the repo **
+## Learn More
 
-```
-git clone https://github.com/
-cd 
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-** Install npm packages **
-Install the npm packages described in the package.json and verify that it works:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-```
-npm install
-npm start
-```
+### Code Splitting
 
-The npm start command builds (compiles TypeScript and copies assets) the application into dist/, watches for changes to the source files, and runs lite-server on port 4200.
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-## Application Structure ##
-We have tried to follow the basic ideology while creating the file structure and the structure look as follows :
+### Analyzing the Bundle Size
 
-<img src="https://github.com/abhishek-sisodiya/theweatherman/blob/master/Frontend/docs/images/application-structure.png" alt="project structure"></a>
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-## UI Design ##
+### Making a Progressive Web App
 
-This application is user friendly as all the features are on the single page i.e home page which comprises of -
-1- Google maps showing locations based on the user search and the recently searched feature is also provided.
-2- Different service providers showing their respective weather data of the place searched by the user.
-3- The key feature of the app that is THE WEATHERMAN ANALYSIS section which shows the aggregate weather forecast report based on the analysis made out of the data fetched by the 4 service providers and analysis on the last year data of that particular day. And on the basis of the forecast, background will be changed likewise.
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-<p align="center">
-<img width="600" src="https://github.com/abhishek-sisodiya/theweatherman/blob/master/Frontend/docs/images/application-1.png">
-</p>
+### Advanced Configuration
 
-<p align="center">
-<img width="600" src="https://github.com/abhishek-sisodiya/theweatherman/blob/master/Frontend/docs/images/application-2.png">
-</p>
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-## Running the server in Docker Container ##
-##### Docker #####
+### Deployment
 
-Running the server in Docker Container
-Docker is a platform for developers to develop, deploy, and run applications with containers.A container is launched by running an image. An image is an executable package that includes everything needed to run an application — the code, a runtime, libraries, environment variables, and configuration files.
-A container is a runtime instance of an image — what the image becomes in memory when executed (that is, an image with state, or a user process). You can see a list of your running containers with the command, docker ps.
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-Command to build the container :
+### `npm run build` fails to minify
 
-```
-docker build -t TheWeatherMan .
-```
-
-Command to run the container :
-
-```
-docker run -p 8080:8080 TheWeatherMan
-```
-
-##### Docker Compose #####
-Another alternative to run the application is to use the docker-compose.yml file and utility. To build the application using docker-compose simply execute the following command :
-```
-docker-compose build
-```
-
-And to run the application, please execute the following command :
-```
-docker-compose up
-```
-
-
-## Angular 6 References ##
-Refer to https://angular.io/guide/quickstart to get an understanding of how angular 6 works
-
-## Contributors ##
-[Sakshi Badaya](https://www.linkedin.com/in/sakshi-badaya-70bb74137/)
-
-## License ##
-This project is licensed under the terms of the MIT license.
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
