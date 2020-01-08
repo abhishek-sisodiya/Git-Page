@@ -1,8 +1,8 @@
 {
-  "name": "demo-app",
+  "name": "Git-Page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mehulmpt.github.io/demo-app",
+  "homepage": "https://abhishek-sisodiya.github.io/Git-Page",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.1",
